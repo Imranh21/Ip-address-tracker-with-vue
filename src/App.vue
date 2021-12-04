@@ -1,8 +1,8 @@
 <template>
-  <div class="w-full h-screen min-h-screen flex flex-col">
+  <div class="w-full h-screen flex flex-col">
     
     <div class=" w-full flex flex-col relative bg-hero-pattern bg-cover justify-center items-center">
-      <div class="w-4/12 py-10 pb-20 m-auto justify-center items-center text-center sm:w-10/12">
+      <div class="w-4/12 py-10 pb-20 m-auto justify-center items-center text-center sm:w-10/12 sm:pb-6">
         <h1 class="text-2xl mb-4 text-gray-50">IP Address Tracker</h1>
         <div class="flex justify-center items-center">
           <input v-model="ipAddress" class="flex-1 px-4 py-2 rounded-tl-md rounded-bl-md focus:outline-none" placeholder="Search any ip address" />
@@ -11,12 +11,12 @@
       </div>
 
       <div v-if="ipInfo" class="w-6/12 z-20 aboslute -bottom-5 sm:w-10/12">
-        <div class="w-full m-auto bg-white rounded-md flex justify-between py-4 px-10 shadow-xl sm:flex-col sm:text-center">
-          <div class="sm:my-4">
+        <div class="w-full m-auto bg-white rounded-md flex justify-between py-4 px-8 shadow-xl sm:flex-col sm:text-center">
+          <div class="sm:my-2">
             <p class="text-gray-400 text-sm ">IP Address</p>
             <span class="text-lg mt-2 font-bold">{{ipInfo.ip}}</span>
           </div>
-          <div class="sm:my-4">
+          <div class="sm:my-2">
             <p class="text-gray-400 text-sm ">Location</p>
             <span class="text-lg mt-2 font-bold">{{ipInfo.location}}</span>
           </div>
@@ -24,7 +24,7 @@
             <p class="text-gray-400 text-sm ">Timezone</p>
             <span class="text-lg mt-2 font-bold">{{ipInfo.timezone}}</span>
           </div>
-          <div class="sm:my-4">
+          <div class="sm:my-2">
             <p class="text-gray-400 text-sm ">ISP</p>
             <span class="text-lg mt-2 font-bold">{{ipInfo.isp}}</span>
           </div>
