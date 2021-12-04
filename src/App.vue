@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full h-auto flex flex-col">
+  <div class="w-full h-screen flex flex-col">
     
     <div class=" w-full flex flex-col relative bg-hero-pattern bg-cover justify-center items-center">
       <div class="w-4/12 py-10 pb-20 m-auto justify-center items-center text-center sm:w-10/12 sm:pb-6">
@@ -34,7 +34,7 @@
     </div>
     
 
-    <div id="map" class="-mt-10 z-10 w-full h-full">
+    <div id="map" class="-mt-10 z-10 w-full h-screen">
 
     </div>
 
